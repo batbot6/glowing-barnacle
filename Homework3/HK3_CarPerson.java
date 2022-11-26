@@ -34,7 +34,9 @@ public class HK3_CarPerson {
 
         System.out.println("Bani4arka's max fuel capacity is " + Bani4arka.fuelTankCapacity);
         System.out.println("Bani4arka's current fuel reserve is " + Bani4arka.freeFuel);
+        System.out.println("Bani4arka runs on " + Bani4arka.engineFuelOperationSystem);
 
+        System.out.println(" ");
         System.out.println("Ninja was produced in " + Ninja.year);
         System.out.println("Ninja cost " + Ninja.price);
         if (Ninja.isSportCar) {
@@ -46,7 +48,7 @@ public class HK3_CarPerson {
 
         System.out.println("Ninja's max fuel capacity is " + Ninja.fuelTankCapacity);
         System.out.println("Ninja's current fuel reserve is " + Ninja.freeFuel);
-
+        System.out.println("Ninja runs on " + Ninja.engineFuelOperationSystem); //press X to doubt
 
 
 
