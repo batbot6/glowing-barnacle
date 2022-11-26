@@ -20,7 +20,7 @@ public class HK3_CarPerson {
         Ninja.fuelTankCapacity = 100; //per cent
         Ninja.freeFuel = 80;
         Ninja.engineFuelOperationSystem = "electric";
-        Ninja.changeЕngineFuelOperationSystem("gaz"); //crime against autoenthusiasts =D
+        Ninja.changeЕngineFuelOperationSystem("auto gas"); //crime against autoenthusiasts =D
         Ninja.price = 35000;
 
         System.out.println("Bani4arka was produced in " + Bani4arka.year);
