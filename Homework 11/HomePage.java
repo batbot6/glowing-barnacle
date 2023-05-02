@@ -1,7 +1,6 @@
 package Homework_11;
 
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,16 +25,16 @@ public class HomePage {
         PageFactory.initElements(this.driver,this);
     }
     public void loginUser(String userName, String password){
-        System.out.println("Login person as: " + " Username: " + userName + " Password: " + password);
+            System.out.println("Login person as: " + " Username: " + userName + " Password: " + password);
 
-        WebDriverWait wait = new WebDriverWait(driver,10);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='login-button']")));
+            WebDriverWait wait = new WebDriverWait(driver,10);
+            wait.until(ExpectedConditions.elementToBeClickable(loginButton));
 
 
-        this.userName.sendKeys(userName);
-        this.password.sendKeys(password);
+            this.userName.sendKeys(userName);
+            this.password.sendKeys(password);
 
-        this.loginButton.click();
+            this.loginButton.click();
 
 
         // login page should open, username and password should be written and login button should be clicked

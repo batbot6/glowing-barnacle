@@ -1,40 +1,35 @@
 package Homework_11;
 
 
-import org.junit.AfterClass;
+import org.junit.After;
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class HK9_new {
+public class HK9_new extends MainClassHK10 {
 
     private static ChromeDriver driver;
     WebElement element1, element2;
 
-    @BeforeClass
+  //  @BeforeClass
 
-    public static void raiseBrowser() {
-        ChromeOptions options = new ChromeOptions();
+  //  public static void raiseBrowser() {
+    //    ChromeOptions options = new ChromeOptions();
 
-        options.setBinary("C:/Program Files/Google/Chrome/Application/Chrome.exe");
-        System.setProperty("webdriver.chrome.driver", "C:/Users/User/IdeaProjects/Autom1_/src/test/resources/drivers/chromedriver.exe");
-        driver = new ChromeDriver();
-
-    }
+    //    options.setBinary("C:/Program Files/Google/Chrome/Application/Chrome.exe");
+     //   System.setProperty("webdriver.chrome.driver", "C:/Users/User/IdeaProjects/Autom1_/src/test/resources/drivers/chromedriver.exe");
+    //    driver = new ChromeDriver();    }
 
     @Test
     public void A_LogInApp()
 
     {
-
 
         driver.get("https://www.saucedemo.com");
         driver.manage().window().maximize();
@@ -70,7 +65,7 @@ public class HK9_new {
     }
 
 
-    @AfterClass
+    @After
     public static void CleanUp() {
         driver.quit();
     }

@@ -1,7 +1,8 @@
-
+/*
 
 package Homework_11;
 
+import org.junit.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -42,10 +43,13 @@ public class BrowserFactory {
         }
         return driver;
     }
-    public static void closeBrowser(){
+
+    @After
+
+       public void closeBrowser(){
         for(String key : drivers.keySet() ){
             drivers.get(key).close();
             drivers.get(key).quit();
         }
     }
-}
+} */
