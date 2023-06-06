@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
 
@@ -19,24 +17,27 @@ public class HomePage {
     @FindBy(xpath =".//*[@id='login-button']")
     WebElement loginButton;
 
-
     public HomePage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(this.driver,this);
+
     }
-    public void loginUser(String userName, String password){
-            System.out.println("Login person as: " + " Username: " + userName + " Password: " + password);
-
-            WebDriverWait wait = new WebDriverWait(driver,10);
-            wait.until(ExpectedConditions.elementToBeClickable(loginButton));
+           // System.out.("Login person as: " + " Username: " + userName + " Password: " + password);
 
 
-            this.userName.sendKeys(userName);
-            this.password.sendKeys(password);
+    public void sendStuff(String userName, String password) {
+        this.userName.sendKeys(userName);
+        this.password.sendKeys(password);
 
+    }
+
+        public void clickButton() {
             this.loginButton.click();
+            // login page should open, username and password should be written and login button should be clicked
+        }
 
-
-        // login page should open, username and password should be written and login button should be clicked
     }
-}
+
+
+
+
