@@ -1,0 +1,20 @@
+Given that I am on demoqa text box site
+When I enter Full name
+And I enter Email
+And I enter Current Address
+And I enter Permanent Address
+And I click Submit
+Then I see the info I entered in the info box below the entry form
+
+Given that I am on demoqa check box site
+When I click Home link's expand triangle
+Then I see Downloads link's expand triangle
+
+Given that I am on demoqa check box site 
+And I see Downloads link's expand triangle
+When I click Downloads link's expand triangle
+Then I see Word File.doc
+
+Given that I see Word File.doc 
+When I click Word File.doc, 
+Then I see "You have selected : wordFile"
